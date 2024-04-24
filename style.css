@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  
+  font-family: "Crimson Pro","Work Sans",  serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.full{
+  background-color: #FCF6F6;
+
+}
+.carousel-title{
+
+  color: #222;
+  font-size: 30px;
+  font-weight: 400;
+  padding-top:48px;
+  margin: 0 auto 24px;
+  text-transform: uppercase;
+
+}
+
+.col-12{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center{
+  align-items: center;
+  justify-content: center;
+}
+
+.trend-images{
+  display: inline-flex;
+
+}
+
+.row{
+  margin: 0 60px 0 60px;
+}
+
+
+.row img{
+
+  width: 100%;
+  padding-right: 7px;
+}
+
+.banner{
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color:#A72F30;
+  width:100%;
+  height: 80px;
+  gap: 48px;
+  
+}
+
+.banner-text p{
+
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+
+
+}
+
+.banner-text{
+  padding-right: 30px;
+}
+
+.banner h2{
+  text-transform: uppercase;
+}
+
+.email input{
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  height: 40px;
+  padding: 12px 100px 12px 22px
+
+}
+
+.name{
+  margin-top: 40px;
+  color: #A72F30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name h1{
+  display: inline-block;
+  font-weight: 400;
+  font-size: 50px;
+}
+
+.name-p{
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.imgs{
+  margin-top: 25px;
+  display: inline-flex;
+
+}
+
+.imgs img{
+  width: 100%;
+}
+
+.ftrs{
+  display: flex;
+  padding: 48px 0 32px;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 24px;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  
+  
+}
+
+.ftrs-1{
+  display: flex;
+  
+  color: #222;
+  padding: 0 25px 0 25px ;
+}
+.ftrs-1 img{
+  padding-right: 10px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.ftrs-2{
+
+  display: flex;
+  
+  color: #222;
+  padding: 0 25px 0 25px ;
+
+}
+.ftrs-2 img{
+  padding-right: 10px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.ftrs-3{
+  display: flex;
+  color: #222;
+  padding: 0 25px 0 25px ;
+
+}
+.ftrs-3 img{
+  padding-right: 10px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
