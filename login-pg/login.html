@@ -1,28 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
     <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="../login-pg/login.css" />
   </head>
+
   <body>
-    <div class="login-sec">
+    <div
+      class="wrapper"
+      style="background-image: url('images/bg-registration-form-1.jpg')"
+    >
       <div class="inner">
-        <div class="img-holder">
-          <img src="../assets/j-images/loginImage.jpg" alt="loginimg" />
+        <div class="image-holder">
+          <img src="../assets/j-images/loginImage.jpg" alt="" />
         </div>
         <form action="">
-          <div class="form-title">
-            <img
-              class="login-logo"
-              src="../assets/j-images/login-iogo.svg"
-              alt=""
-            />
+          <img
+            class="login-logo"
+            src="../assets/j-images/login-iogo.svg"
+            alt=""
+          />
+          <h3>Sign In/ Sigin UP</h3>
+          <p>via OTP</p>
 
-            <h3>Sign in/ sign up</h3>
-            <p>via OTP</p>
+          <div class="form-wrapper">
+            <input
+              type="text"
+              placeholder="Enter mobile number or email"
+              class="form-control"
+            />
+            <i class="zmdi zmdi-account"></i>
           </div>
+
+          <button>
+            CONTINUE
+            <i class="zmdi zmdi-arrow-right"></i>
+          </button>
         </form>
       </div>
     </div>
