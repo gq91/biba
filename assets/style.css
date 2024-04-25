@@ -81,14 +81,25 @@
   text-transform: uppercase;
 }
 
+.sub-btn{
+  background-color: white;
+  border-style: none;
+  color: #A72F30;
+  height: 40px;
+  padding: 0 14px;
+  font-weight: 600;
+}
+
 .email input{
-  border-radius: 2px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
   border: none;
   outline: none;
   height: 40px;
-  padding: 12px 100px 12px 22px
+  padding: 12px 100px 12px 22px;
 
 }
+
 
 .name{
   margin-top: 40px;
