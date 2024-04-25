@@ -53,7 +53,7 @@ a:hover {
     padding-right: 45px; }
   .inner h3 {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 15px;
     font-family: "Poppins-SemiBold";
     text-align: center;
     font-weight: 400;
@@ -66,7 +66,16 @@ a:hover {
 
   }
 
-  .
+.login-title img{
+  margin: auto;
+  display: block;
+  margin-bottom: 5px;
+  width: 15px;
+}
+
+.login-title{
+  margin-top: -15px;
+}
 
 
 
@@ -98,4 +107,36 @@ button {
   font-size: 15px;
   color: #fff;
   vertical-align: middle;
-  
+}
+
+a{
+  text-decoration: none;
+  font-size: 12px;
+  color: #b51f2a;
+  line-height: 10px;
+}
+
+.otp{
+  display: flex;
+  margin-top: 18px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.or{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 15px;
+  opacity: 75%;
+  font-weight: 500;
+}
