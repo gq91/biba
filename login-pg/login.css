@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* login page */
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+input, textarea, select, button {
+  font-family: "Crimson Pro";
+  color: #333;
+  font-size: 13px;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul {
+  margin: 0; 
+}
+
+img {
+    max-width: 100%; 
+}
+  
+ul {
+    padding-left: 0;
+    margin-bottom: 0; 
+}
+
+
+.login-sec {
+      min-height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center; 
+}
+
+
+.inner {
+  padding: 20px;
+  background: #fff;
+  max-width: 850px;
+  margin: auto;
+  display: flex; }
+  .inner .img-holder {
+    width: 50%; }
+  .inner form {
+    width: 50%;
+    padding-top: 36px;
+    padding-left: 45px;
+    padding-right: 45px; }
+  .inner h3 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: "Crimson Pro";
+    text-align: center;
+  }
+  
+
+.form-title{
+      display: block;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+}
+
+.form-title h3{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+}
+    
+.form-title p{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 400;
+
+      
+}
+
+.login-logo{
+  width: 15px;
+  margin: auto;
+  margin-bottom: 5px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+
