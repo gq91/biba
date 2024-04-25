@@ -1400,13 +1400,9 @@ span h4{
 }
 .first-div h1{
 
-  text-align: center;
-  color: rgb(34, 34, 34);
-    font-size: 30px;
-    font-weight: 400;
-    padding-top: 20px;
-    margin: 0px auto 10px;
-    text-transform: uppercase;
+ text-align: center;
+  padding-top: 20px;
+  font-weight: 300;
 }
 .first-div .img-div{
 
