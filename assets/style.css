@@ -1070,8 +1070,15 @@ video {
 
 
 
+.hero-img{
+  width: 100vw;
+  height: 100vh;
+}
 
-
+.navbar-sec{
+  width: 100vw;
+  height: 100vh;
+}
 
 
 
