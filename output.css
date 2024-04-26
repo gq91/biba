@@ -1834,6 +1834,9 @@ ul{
   margin-top: 12px;
    
 }
+li:hover {
+ text-decoration: underline; 
+}
 
 /* footer second part */
 

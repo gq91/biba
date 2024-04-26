@@ -1,0 +1,148 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+h1 {
+    text-align: center;
+    font-family: crimsonpro;
+    font-size: 30px;
+   
+}
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container-business {
+          width: 80%;
+          margin: 20px auto;
+        }
+        header {
+            background-color: transparent;
+            padding: 20px 0;
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+      .button-container {
+    text-align: center;
+    margin: 1%;
+}
+button {
+    padding: 10px 20px;
+    background-color: #AB3430;
+    color: white;
+    border:none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+ /* ****** footer *******/
+
+.fot-item{
+    height: 680px;
+    width: 100%;
+    background-color: #a72f30;
+    text-align: center;
+    
+  
+  }
+  .fot-li{
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    column-gap:5%;
+  
+    color: #fff;
+    height: 400px;
+    width: 100%;
+  }
+    @media (max-width: 991.98px) {
+      footer{
+          overflow: hidden;
+          flex-wrap: nowrap;
+      }
+  }
+  
+  ul h2{
+    font-size: 17px;
+   
+  }
+  li{
+    list-style: none;
+    margin-top: 10px;
+    padding: 15px;
+  
+  }
+  ul{
+    margin-top: 12px;
+     
+  }
+  li:hover {
+   text-decoration: underline; 
+  }
+  
+  /* footer second part */
+  
+  .main-footer{
+     height: 50px;
+     width: 100%;
+     display: flex;
+     margin-top: 20px;
+    
+  }
+  .icon-box{
+    height:100%;
+    width: 100%; 
+    
+  }
+  .sec-pay{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+   margin-left:10%; 
+    
+  }
+  .sec-pay span{
+     float:inline-start;
+    
+      
+  }
+  .pay{
+    padding: 5px;
+    
+  }
+  .bit-box{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+  }
+  span h4{
+    color: #fff;
+   padding:4px;
+    font-size: 20px;
+    float: left;
+    margin-left:50%; 
+  }
+  
+  #copy{
+    color: #fff;
+    text-align: center;
+  } 
