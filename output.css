@@ -1986,6 +1986,10 @@ li{
   padding: 15px;
 
 }
+li:hover {
+ text-decoration: underline; 
+}
+
 ul{
   margin-top: 12px;
    
