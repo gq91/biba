@@ -1894,9 +1894,12 @@ span h4{
 .first-div .img-div{
 
   margin-top: 20px;
-  margin-left: 20%;
+  margin-left: 13%;
   width: 74%;
   height: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 3px;
   
 }
 .img-div img{
