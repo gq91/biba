@@ -1905,37 +1905,44 @@ video {
 }
 
 /* Contents after #bibaindia */ 
-*{
-  margin: 0px;
-  padding: 0px;
-  font-family: workSans-regular;
-  box-sizing: border-box;
-}
-.container{
+
+.container-1{
+  /* height:1150px; */
   width: 60%;
   align-items: center;
   margin: 0px 20%;
+  /* overflow: hidden;  */
 
-}
-@media  (max-width:600px) {
-  .container{
-       font-size: 12px;
-      line-height: 16px;
-      flex-wrap: wrap;
-      height: 1000px;
+} 
+
+/* @media only screen and (max-width:979.70px){
+  .container-1,p{
+    font-size: 12px;
+    line-height: 16px; 
+    box-sizing: border-box;
+    display: block;
     
   }
-
+} */
+/* @media only screen and (max-width:979.70px){
+  .item,p{
+    font-size: 12px;
+    line-height: 16px;
+     
+    box-sizing: border-box;
+    display: block;
+    
   }
-
+}  */
 .item h2{
-    color: #222;
-    font-size:16px;
+    color:#222;
+    font-weight: 500;
+    font-size:22px;
     margin: 0px 0px 10px;
   
 }
 .item p{
-  font-size: 14px;
+  font-size: 17px;
   color: #222;
   padding:0px 0px 20px;
 
@@ -1961,8 +1968,14 @@ video {
   color: #fff;
   height: 400px;
   width: 100%;
-
 }
+  @media (max-width: 991.98px) {
+    footer{
+        overflow: hidden;
+        flex-wrap: nowrap;
+    }
+}
+
 ul h2{
   font-size: 17px;
  
@@ -1977,45 +1990,56 @@ ul{
   margin-top: 12px;
    
 }
-span h4{
-  color: #fff;
- padding: 5px;
-  font-size: 20px;
-  float: left;
-   margin-left:50%; 
-}
 
-.main-f{
-  height:100px;
-  width: 100%;
-  color: #fff;
-  display: flex;
+/* footer second part */
 
-  
-}
-.box i{
-  text-align: center;
-}
-@media (max-width: 991.98px) {
-  .main-f{
-      font-size: 12px;
-      line-height: 16px;
-      flex-wrap: wrap;
-      height: 500px;
-  }
-}
-.box{
+.main-footer{
    height: 50px;
    width: 100%;
-   
-
-
-
+   display: flex;
+   margin-top: 20px;
+  
 }
-#c{
+.icon-box{
+  height:100%;
+  width: 100%; 
+  
+}
+.sec-pay{
+  height: 100%;
+  width: 100%;
+  color: #fff;
+ margin-left:10%; 
+  
+}
+.sec-pay span{
+   float:inline-start;
+  
+    
+}
+.pay{
+  padding: 5px;
+  
+}
+.bit-box{
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+span h4{
+  color: #fff;
+ padding:4px;
+  font-size: 20px;
+  float: left;
+  margin-left:50%; 
+}
+
+#copy{
   color: #fff;
   text-align: center;
-}
+} 
+
+/* CSS by Rahul Vishwakarma ends here */
 
 /* Explore section css */
 *{
