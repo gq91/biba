@@ -1756,7 +1756,6 @@ video {
   box-sizing: border-box;
 }
 .container{
-  height:1400px;
   width: 60%;
   align-items: center;
   margin: 0px 20%;
