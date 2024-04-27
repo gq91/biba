@@ -14,6 +14,7 @@ This project was developed by a team under the guidance of our mentor. Here's a 
 ## Hosted Link
 
 The project is hosted on Netlify and can be accessed [here](https://friendly-moxie-cc41a5.netlify.app/).
+and video link is  [here](https://drive.google.com/file/d/1BZUszH5ApXKeTB2-oHTHjy-BOJCkNsRM/view?usp=sharing).
 
 ## Technologies Used
 
