@@ -1,15 +1,15 @@
 # Project Contributors
 
-This project was developed by a team under the guidance of our mentor. Here's a list of contributors and their respective contributions:
+This project was developed by a team under the guidance of our mentor. Here's a list of contributors.
 
 ## Contributors
 
-1. **[Shivam Gupta](link-to-profile)** - Description of their contribution.
-2. **[Sandeep Singh](link-to-profile)** - Description of their contribution.
-3. **[Rahul Kumar Vishwakarma](link-to-profile)** - Description of their contribution.
-4. **[Josef Kotichukkala](link-to-profile)** - Description of their contribution.
-5. **[Abhishek Yadav](link-to-profile)** - Description of their contribution.
-6. **[Aman Kumar](link-to-profile)** - Description of their contribution.
+1. **[Shivam Gupta](link-to-profile)** 
+2. **[Sandeep Singh](link-to-profile)** 
+3. **[Rahul Kumar Vishwakarma](link-to-profile)** 
+4. **[Josef Kotichukkala](link-to-profile)**
+5. **[Abhishek Yadav](link-to-profile)**
+6. **[Aman Kumar](link-to-profile)** 
 
 ## Hosted Link
 
@@ -23,7 +23,7 @@ The project is hosted on Netlify and can be accessed [here](https://friendly-mox
 
 ## Mentor
 
-The mentor for this project was [Swati Priya](link-to-profile).
+The mentor for this project was [Swati Priya](https://www.linkedin.com/in/swatipriya87899/).
 
 ## How to Contribute
 
