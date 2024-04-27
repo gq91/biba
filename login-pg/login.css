@@ -94,8 +94,8 @@ a:hover {
 
 button {
   border: none;
-  width: 164px;
-  height: 51px;
+  width: 135px;
+  height: 40px;
   margin: auto;
   margin-top: 40px;
   cursor: pointer;
@@ -139,4 +139,36 @@ a{
   font-size: 15px;
   opacity: 75%;
   font-weight: 500;
+}
+
+.rememberlabel{
+  font-size: 12px;
+  font-weight: 400;
+
+}
+
+.remember{
+  display: flex;
+  align-items: start;
+
+}
+
+.social-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: -20px;
+}
+
+.social-btn button{
+  width: 120px;
+  height: 35px;
+  background-color: #EEEEEE;
+  color: #333;
+}
+
+.social-btn button img{
+
+width: 30px;
+padding: 5px;
 }
