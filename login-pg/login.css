@@ -165,6 +165,8 @@ a{
   height: 35px;
   background-color: #EEEEEE;
   color: #333;
+  border-radius: 2px;
+  margin: 40px 15px 0  0;
 }
 
 .social-btn button img{
