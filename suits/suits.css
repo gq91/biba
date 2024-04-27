@@ -1722,3 +1722,6 @@ span h4{
 } 
 
 /* CSS by Rahul Vishwakarma ends here */
+.suits-li ul li{
+  padding: 0;
+}
