@@ -1,61 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site-Biba-Business</title>
-    <link rel="icon" href="../media/icons/title-logo.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="./mycart.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cart</title>
+  <link rel="icon" href="../media/icons/title-logo.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="./mycart.css">
 </head>
-
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
+  <nav class="w-full">
+    <div>
+      <div class="shadow-xl w-full text-black hover:text-black hover:bg-white">
+        <div class="max-w-[1248px] mx-auto ">
+          <div class="nav-top flex justify-between items-center py-4 gap-x-2 relative">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Business Enquiries</title>
-        <link rel="stylesheet" href="businessenquiry.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-
-    <body>
-               
-<div class="cart-container">
-  <div class="cart-header">Your Cart is Empty</div>
-  <div class="carticon"><img src="../media/icons/carticon.svg" height="60px" width="60px"  alt="carticon"  > </div>
-  <p class="cart-message">Looks like you haven't added anything to your cart yet.</p>
-  <a href="./index.html" class="continue-shopping">Continue Shopping</a>
-
-  <div class="ftrs">
-    <div class="ftrs-1">
-      <img
-        src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOS4yODUgMjEuMjk2aC0yLjU1YS42MzcuNjM3IDAgMCAxIDAtMS4yNzVoMi41NWEuNjM4LjYzOCAwIDAgMSAwIDEuMjc0em0yMC43MTIgMGgtMS41OTRhLjYzNy42MzcgMCAwIDEgMC0xLjI3NWgxLjA2NWwuODU5LTQuNTc4Yy0uMDEyLTIuMzQzLTIuMDEzLTQuMzQ0LTQuNDczLTQuMzQ0aC00LjE4NWwtMi4wMjcgOC45MjJoMy42NjJhLjYzOC42MzggMCAwIDEgLjAwMSAxLjI3NGgtNC40NjFhLjY0LjY0IDAgMCAxLS42MjItLjc3OGwyLjMxOC0xMC4xOTZhLjYzNi42MzYgMCAwIDEgLjYyMS0uNDk3aDQuNjkzYTUuNzQzIDUuNzQzIDAgMCAxIDUuNzM2IDUuNzM2bC0uOTY4IDUuMjE1YS42MzQuNjM0IDAgMCAxLS42MjUuNTJ6IiBmaWxsPSIjMDAwIiBzdHJva2U9IiNGOUY2RjAiIHN0cm9rZS13aWR0aD0iLjUiLz48cGF0aCBkPSJNMTEuODM0IDIzLjg0N2EzLjE5IDMuMTkgMCAwIDEtMy4xODYtMy4xODcgMy4xOSAzLjE5IDAgMCAxIDMuMTg2LTMuMTg2IDMuMTkgMy4xOSAwIDAgMSAzLjE4NiAzLjE4NiAzLjE5IDMuMTkgMCAwIDEtMy4xODYgMy4xODd6bTAtNS4wOTlhMS45MTQgMS45MTQgMCAwIDAtMS45MTIgMS45MTJjMCAxLjA1NC44NTggMS45MTIgMS45MTIgMS45MTJhMS45MTQgMS45MTQgMCAwIDAgMS45MTEtMS45MTIgMS45MTQgMS45MTQgMCAwIDAtMS45MTEtMS45MTJ6bS0yLjU1LTguOTIxSDQuMTg3YS42MzguNjM4IDAgMCAxIDAtMS4yNzVoNS4wOTlhLjYzOC42MzggMCAwIDEgMCAxLjI3NXptMCAzLjgyM0gyLjkxMmEuNjM3LjYzNyAwIDAgMSAwLTEuMjc0aDYuMzc0YS42MzguNjM4IDAgMCAxIDAgMS4yNzR6bTAgMy44MjRIMS42MzhhLjYzOC42MzggMCAwIDEgMC0xLjI3NWg3LjY0OGEuNjM4LjYzOCAwIDAgMSAwIDEuMjc1eiIgZmlsbD0iIzAwMCIgc3Ryb2tlPSIjRjlGNkYwIiBzdHJva2Utd2lkdGg9Ii41Ii8+PHBhdGggZD0iTTE4Ljg0NCAyMS4yOTVoLTQuNDYxYS42MzguNjM4IDAgMCAxIDAtMS4yNzVoMy45NTNMMjEuMjMgNy4yNzVINi43MzVhLjYzNy42MzcgMCAwIDEgMC0xLjI3NWgxNS4yOTZhLjY0LjY0IDAgMCAxIC42MjIuNzc3bC0zLjE4NyAxNC4wMmEuNjM4LjYzOCAwIDAgMS0uNjIyLjQ5OHptNy4wMSAyLjU0OWEzLjE5IDMuMTkgMCAwIDEtMy4xODYtMy4xODYgMy4xOSAzLjE5IDAgMCAxIDMuMTg2LTMuMTg3IDMuMTkgMy4xOSAwIDAgMSAzLjE4NiAzLjE4NyAzLjE5IDMuMTkgMCAwIDEtMy4xODYgMy4xODZ6bTAtNS4wOTlhMS45MTQgMS45MTQgMCAwIDAtMS45MTIgMS45MTNjMCAxLjA1My44NTggMS45MTEgMS45MTIgMS45MTFhMS45MTQgMS45MTQgMCAwIDAgMS45MTItMS45MTEgMS45MTUgMS45MTUgMCAwIDAtMS45MTItMS45MTN6IiBmaWxsPSIjMDAwIiBzdHJva2U9IiNGOUY2RjAiIHN0cm9rZS13aWR0aD0iLjUiLz48L3N2Zz4="
-        alt="">
-      <p>Free Shipping
-      <p>
+            <div class="flex justify-between items-center gap-x-14 max-md:w-full max-md:px-4">
+              <div class="md:hidden">
+                <span class="material-symbols-outlined">menu</span>
+              </div>
+              <a href="../index.html"><div class="icon-logo text-2xl text-red-800 hover:text-red-800"></div></a>
+              <div class="md:hidden w-1"></div>
+              <p class="max-md:hidden flex gap-x-1 items-center text-xs font-medium">
+                Ship to
+                <img width="30px" class="scale-75"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHVn2Kh3KTDE5Y30vKR5xYF-_4Bj21BHB7N-a9gUqATA&s"
+                  alt="" srcset="" />
+                Biba India (INR)
+                <span class="material-symbols-outlined scale-75">
+                  expand_more
+                </span>
+              </p>
+            </div>
+            <div
+              class="max-md:px-3 gap-x-2 max-md:w-full max-md:gap-y-4 max-md:items-end max-md:absolute right-0 top-1/2 max-md:-translate-y-[15px] search flex max-md:flex-col-reverse justify-between items-center grow">
+              <div class="relative min-w-[400px] max-md:w-full">
+                <span class="material-symbols-outlined leading-3 absolute left-4 top-1/2 -translate-y-1/2">
+                </span>
+                <input type="text"
+                  class="max-md:w-full border rounded-full bg-white bg-opacity-10 p-2 px-12 w-full bg-transparent text-base placeholder:text-white group-hover:placeholder:text-gray-500 focus-within:outline-none"
+                  placeholder="Search kurta, shirts and dupattas" class="" />
+              </div>
+              <div class="flex gap-x-2 text-3xl">
+                <div class="icon-wishlist-black-icn"></div>
+                <div class="icon-profile-black-header-icn"></div>
+                <div class="icon-cart-black-header-icn"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-md:hidden border-b flex justify-between items-center *:p-2 *:whitespace-nowrap *:text-xs *:font-medium *:border-b-4 *:border-b-transparent hover:*:border-b-red-800">
+            <div class="bg-red-800 text-white">NEW</div>
+            <div><a href="./suits/suits.html">Suits Sets</a></div>
+            <div>DRESSES</div>
+            <div>DRESS MATERIAL</div>
+            <div>BOTTOMS</div>
+            <div>FOOTWEAR</div>
+            <div>JEWELLERY</div>
+            <div>HANDBAGS</div>
+            <div>FRAGRANCES</div>
+            <div>GIRLS</div>
+            <div>COLLECTIONS</div>
+            <div>LIVA EXCLUSIVE</div>
+            <div class="bg-red-800 text-white">SALE</div>
+          </div>
+        </div>
     </div>
-    <div class="ftrs-2">
-      <img
-        src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyOCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjMuODU2IDI0LjQ1NUgzLjQzYTIuODQgMi44NCAwIDAgMS0yLjgzNy0yLjgzN1Y1LjczYS41NjcuNTY3IDAgMSAxIDEuMTM1IDB2MTUuODg3YzAgLjkzOS43NjQgMS43MDIgMS43MDIgMS43MDJoMjAuNDI3YS41NjguNTY4IDAgMCAwIC41NjctLjU2N3YtMy40MDRhLjU2OC41NjggMCAxIDEgMS4xMzUgMHYzLjQwNGMwIC45MzktLjc2NCAxLjcwMi0xLjcwMiAxLjcwMnoiIGZpbGw9IiMwMDAiIHN0cm9rZT0iI0Y5RjZGMCIgc3Ryb2tlLXdpZHRoPSIuMjUiLz48cGF0aCBkPSJNMjQuOTkxIDEzLjEwN2EuNTY3LjU2NyAwIDAgMS0uNTY4LS41NjdWOS4xMzRhLjU2OC41NjggMCAwIDAtLjU2Ny0uNTY3SDMuNDNhMi43NzggMi43NzggMCAwIDEtMi4wMDctLjg0MSAyLjc2MiAyLjc2MiAwIDAgMS0uODMtMS45OTVBMi44NCAyLjg0IDAgMCAxIDMuNDMgMi44OTRoOS43MDNhLjU2Ny41NjcgMCAwIDEgMCAxLjEzNEgzLjQzYy0uOTM4IDAtMS43MDIuNzY0LTEuNzAyIDEuNzAzIDAgLjQ1Ny4xNzcuODguNDk3IDEuMTk0LjMyNC4zMy43NS41MDggMS4yMDUuNTA4aDIwLjQyN2MuOTM4IDAgMS43MDIuNzY0IDEuNzAyIDEuNzAydjMuNDA1YS41NjcuNTY3IDAgMCAxLS41NjcuNTY3eiIgZmlsbD0iIzAwMCIgc3Ryb2tlPSIjRjlGNkYwIiBzdHJva2Utd2lkdGg9Ii4yNSIvPjxwYXRoIGQ9Ik0yMS41ODYgOC41NjhBLjU2Ny41NjcgMCAwIDEgMjEuMDIgOFY0LjU5NmEuNTcuNTcgMCAwIDAtLjU2OC0uNTY4aC0yLjA3NmEuNTY3LjU2NyAwIDEgMSAwLTEuMTM0aDIuMDc2Yy45NCAwIDEuNzAzLjc2MyAxLjcwMyAxLjcwMlY4YS41NjguNTY4IDAgMCAxLS41NjguNTY4eiIgZmlsbD0iIzAwMCIgc3Ryb2tlPSIjRjlGNkYwIiBzdHJva2Utd2lkdGg9Ii4yNSIvPjxwYXRoIGQ9Ik0yMS4wMiA4LjU2OGEuNTY2LjU2NiAwIDAgMS0uNDktLjI4MmwtMy42ODQtNi4zMTJMNS45OSA4LjQ4N2EuNTY3LjU2NyAwIDEgMS0uNTgzLS45NzNMMTYuNzU1LjcwNGEuNTczLjU3MyAwIDAgMSAuNzgzLjJsMy45NzEgNi44MWEuNTY1LjU2NSAwIDAgMS0uMjA0Ljc3NS41NTQuNTU0IDAgMCAxLS4yODYuMDc5em02LjI0IDExLjM0OGgtNS42NzRhMy45NzcgMy45NzcgMCAwIDEtMy45NzItMy45NzIgMy45NzcgMy45NzcgMCAwIDEgMy45NzItMy45NzJoNS42NzRjLjMxNCAwIC41NjguMjU0LjU2OC41Njh2Ni44MDlhLjU2Ny41NjcgMCAwIDEtLjU2OC41Njd6bS01LjY3NC02LjgxYTIuODQgMi44NCAwIDAgMC0yLjgzNyAyLjgzOCAyLjg0IDIuODQgMCAwIDAgMi44MzcgMi44MzdoNS4xMDd2LTUuNjc0aC01LjEwN3oiIGZpbGw9IiMwMDAiIHN0cm9rZT0iI0Y5RjZGMCIgc3Ryb2tlLXdpZHRoPSIuMjUiLz48cGF0aCBkPSJNMjEuNTg2IDE3LjY0NmExLjcwNCAxLjcwNCAwIDAgMS0xLjcwMi0xLjcwMmMwLS45MzguNzY0LTEuNzAyIDEuNzAyLTEuNzAyLjk0IDAgMS43MDIuNzY0IDEuNzAyIDEuNzAyIDAgLjkzOS0uNzYzIDEuNzAyLTEuNzAyIDEuNzAyem0wLTIuMjdhLjU2OS41NjkgMCAwIDAgMCAxLjEzNi41NjkuNTY5IDAgMCAwIDAtMS4xMzV2LS4wMDF6IiBmaWxsPSIjMDAwIiBzdHJva2U9IiNGOUY2RjAiIHN0cm9rZS13aWR0aD0iLjI1Ii8+PC9zdmc+"
-        alt="">
-      <p>Secure Payments
-      <p>
+    </header>
     </div>
-    <div class="ftrs-2">
-      <img
-        src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMjciIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAyNyAyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNy4zNTYgNS4xOTZsMy4xODEgMi45N2MuNTQ0LjUxIDEuNDE3LjA4IDEuNDE3LS42OVY2Ljg5Yy45My4wNjYgMS43OTcuMzIgMi41MjYuNzQ0Ljk4NC41NzIgMS43NTMgMS41NzUgMi4xMDggMi43NTJhLjg3Ljg3IDAgMCAwIC44MjQuNjM4Yy4wOSAwIC4xOC0uMDA4LjI3LS4wMTIuNDcyLS4wMjMuODUtLjQ2Ni44MjQtLjk3MXYtLjAwN2E3LjgxNCA3LjgxNCAwIDAgMC0uNTk3LTIuNjE0Yy0uNjQ2LTEuNTI0LTEuNzUyLTIuNzY4LTMuMzgtMy44MDItLjgxOC0uNTItMS43MS0uODE3LTIuNTc1LTEuMTA0di0uOThjMC0uNzctLjg3Ni0xLjE5Ni0xLjQxNy0uNjkxbC0zLjE4IDIuOTdhLjk3Ljk3IDAgMCAwIDAgMS4zODN6bS40NjItLjgxM0wxMSAxLjQxYy4wOTYtLjA5LjI1LS4wMTUuMjUuMTIyVjIuOGMwIC4xNzYuMTEzLjMyOC4yNzIuMzY4LjA2OC4wMTYuMTQzLjAzOC4yMTMuMDYyLjg2Ny4yODcgMS42ODUuNTYgMi40MzUgMS4wMzYgMS41Ljk1MyAyLjUxNCAyLjA4NiAzLjEgMy40NjZhNy4wNSA3LjA1IDAgMCAxIC41MzMgMi4zNDJ2LjAwNmEuMTY3LjE2NyAwIDAgMS0uMTUzLjE3N2wtLjIzLjAxMmgtLjAwOGEuMTYzLjE2MyAwIDAgMS0uMTU0LS4xMTZjLS40MS0xLjM2LTEuMy0yLjUyLTIuNDQzLTMuMTgzLS45MTItLjUzLTIuMDEtLjgyNC0zLjE3Ni0uODUxYS4zNzEuMzcxIDAgMCAwLS4zODkuMzc2di45OGMwIC4xMzYtLjE1NC4yMTMtLjI1LjEyM0w3LjgxNyA0LjYyN2EuMTcxLjE3MSAwIDAgMSAwLS4yNDRoLjAwMXpNMS45NiAxOC40NzhoLjkyMXY1LjY0NGMwIC44MDYuNjk2IDEuNDYyIDEuNTUyIDEuNDYyaDE4Ljc5Yy44NTYgMCAxLjU1Mi0uNjU2IDEuNTUyLTEuNDYydi01LjY0NGguOTIxYy43ODggMCAxLjM0NS0uNzczIDEuMDUzLTEuNDYzbC0yLTQuNzI1YS4zODEuMzgxIDAgMCAwLS4zNTUtLjIyNmgtMi4wMTJjLS4yMSAwLS4zOC4xNi0uMzguMzU5IDAgLjE5OC4xNy4zNTkuMzguMzU5aDEuNzU0bDEuOTA1IDQuNDk5Yy4wOTcuMjI3LS4wODYuNDgtLjM0NS40OEgxMy43NjNhLjM3My4zNzMgMCAwIDEtLjM0NS0uMjJsLTIuMDE2LTQuNzZoOS40NTVjLjIxIDAgLjM4MS0uMTYuMzgxLS4zNThhLjM3LjM3IDAgMCAwLS4zOC0uMzZIMy4yNmEuMzgzLjM4MyAwIDAgMC0uMzU0LjIyN0wuOTA3IDE3LjAxNGMtLjI5Mi42OS4yNjUgMS40NjMgMS4wNTMgMS40NjN6bTguODggMy43OTVjLjIxMSAwIC4zODItLjE2LjM4Mi0uMzZWMTQuMjlsMS40OSAzLjUxN2MuMTcyLjQwOC41ODUuNjcgMS4wNTIuNjdoMTAuMjV2NS42NDVjMCAuNDEtLjM1NS43NDQtLjc5Ljc0NEgxMS4yMlYyMy4zNWEuMzcuMzcgMCAwIDAtLjM4LS4zNi4zNzEuMzcxIDAgMCAwLS4zODIuMzZ2MS41MTZINC40MzJjLS40MzYgMC0uNzktLjMzMy0uNzktLjc0NHYtNS42NDRoNC4yNzVjLjQ2IDAgLjg4Mi0uMjcgMS4wNTMtLjY3MmwxLjQ5LTMuNTE2djcuNjI0YzAgLjE5OS4xNy4zNTkuMzguMzU5ek0xLjYxNCAxNy4yOGwxLjkwNi00LjVoNi43NmwtMi4wMTcgNC43NmEuMzczLjM3MyAwIDAgMS0uMzQ1LjIySDEuOTZjLS4yNTkgMC0uNDQtLjI1My0uMzQ1LS40OHoiIGZpbGw9IiMwMDAiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIuMSIvPjwvc3ZnPg=="
-        alt="">
-      <p>Easy Return
-      <p>
+  </nav>
+
+  <div class="cart-container">
+    <div class="cart-header">Your Cart is Empty</div>
+    <div class="carticon"><img src="../media/icons/carticon.svg" height="60px" width="60px" alt="carticon"> </div>
+    <p class="cart-message">Looks like you haven't added anything to your cart yet.</p>
+    <a href="./index.html" class="continue-shopping">Continue Shopping</a>
+
+    <div class="ftrs">
+      <div class="ftrs-1">
+        <img
+          src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOS4yODUgMjEuMjk2aC0yLjU1YS42MzcuNjM3IDAgMCAxIDAtMS4yNzVoMi41NWEuNjM4LjYzOCAwIDAgMSAwIDEuMjc0em0yMC43MTIgMGgtMS41OTRhLjYzNy42MzcgMCAwIDEgMC0xLjI3NWgxLjA2NWwuODU5LTQuNTc4Yy0uMDEyLTIuMzQzLTIuMDEzLTQuMzQ0LTQuNDczLTQuMzQ0aC00LjE4NWwtMi4wMjcgOC45MjJoMy42NjJhLjYzOC42MzggMCAwIDEgLjAwMSAxLjI3NGgtNC40NjFhLjY0LjY0IDAgMCAxLS42MjItLjc3OGwyLjMxOC0xMC4xOTZhLjYzNi42MzYgMCAwIDEgLjYyMS0uNDk3aDQuNjkzYTUuNzQzIDUuNzQzIDAgMCAxIDUuNzM2IDUuNzM2bC0uOTY4IDUuMjE1YS42MzQuNjM0IDAgMCAxLS42MjUuNTJ6IiBmaWxsPSIjMDAwIiBzdHJva2U9IiNGOUY2RjAiIHN0cm9rZS13aWR0aD0iLjUiLz48cGF0aCBkPSJNMTEuODM0IDIzLjg0N2EzLjE5IDMuMTkgMCAwIDEtMy4xODYtMy4xODcgMy4xOSAzLjE5IDAgMCAxIDMuMTg2LTMuMTg2IDMuMTkgMy4xOSAwIDAgMSAzLjE4NiAzLjE4NiAzLjE5IDMuMTkgMCAwIDEtMy4xODYgMy4xODd6bTAtNS4wOTlhMS45MTQgMS45MTQgMCAwIDAtMS45MTIgMS45MTJjMCAxLjA1NC44NTggMS45MTIgMS45MTIgMS45MTJhMS45MTQgMS45MTQgMCAwIDAgMS45MTEtMS45MTIgMS45MTQgMS45MTQgMCAwIDAtMS45MTEtMS45MTJ6bS0yLjU1LTguOTIxSDQuMTg3YS42MzguNjM4IDAgMCAxIDAtMS4yNzVoNS4wOTlhLjYzOC42MzggMCAwIDEgMCAxLjI3NXptMCAzLjgyM0gyLjkxMmEuNjM3LjYzNyAwIDAgMSAwLTEuMjc0aDYuMzc0YS42MzguNjM4IDAgMCAxIDAgMS4yNzR6bTAgMy44MjRIMS42MzhhLjYzOC42MzggMCAwIDEgMC0xLjI3NWg3LjY0OGEuNjM4LjYzOCAwIDAgMSAwIDEuMjc1eiIgZmlsbD0iIzAwMCIgc3Ryb2tlPSIjRjlGNkYwIiBzdHJva2Utd2lkdGg9Ii41Ii8+PHBhdGggZD0iTTE4Ljg0NCAyMS4yOTVoLTQuNDYxYS42MzguNjM4IDAgMCAxIDAtMS4yNzVoMy45NTNMMjEuMjMgNy4yNzVINi43MzVhLjYzNy42MzcgMCAwIDEgMC0xLjI3NWgxNS4yOTZhLjY0LjY0IDAgMCAxIC42MjIuNzc3bC0zLjE4NyAxNC4wMmEuNjM4LjYzOCAwIDAgMS0uNjIyLjQ5OHptNy4wMSAyLjU0OWEzLjE5IDMuMTkgMCAwIDEtMy4xODYtMy4xODYgMy4xOSAzLjE5IDAgMCAxIDMuMTg2LTMuMTg3IDMuMTkgMy4xOSAwIDAgMSAzLjE4NiAzLjE4NyAzLjE5IDMuMTkgMCAwIDEtMy4xODYgMy4xODZ6bTAtNS4wOTlhMS45MTQgMS45MTQgMCAwIDAtMS45MTIgMS45MTNjMCAxLjA1My44NTggMS45MTEgMS45MTIgMS45MTFhMS45MTQgMS45MTQgMCAwIDAgMS45MTItMS45MTEgMS45MTUgMS45MTUgMCAwIDAtMS45MTItMS45MTN6IiBmaWxsPSIjMDAwIiBzdHJva2U9IiNGOUY2RjAiIHN0cm9rZS13aWR0aD0iLjUiLz48L3N2Zz4="
+          alt="">
+        <p>Free Shipping
+        <p>
+      </div>
+      <div class="ftrs-2">
+        <img
+          src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyOCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjMuODU2IDI0LjQ1NUgzLjQzYTIuODQgMi44NCAwIDAgMS0yLjgzNy0yLjgzN1Y1LjczYS41NjcuNTY3IDAgMSAxIDEuMTM1IDB2MTUuODg3YzAgLjkzOS43NjQgMS43MDIgMS43MDIgMS43MDJoMjAuNDI3YS41NjguNTY4IDAgMCAwIC41NjctLjU2N3YtMy40MDRhLjU2OC41NjggMCAxIDEgMS4xMzUgMHYzLjQwNGMwIC45MzktLjc2NCAxLjcwMi0xLjcwMiAxLjcwMnoiIGZpbGw9IiMwMDAiIHN0cm9rZT0iI0Y5RjZGMCIgc3Ryb2tlLXdpZHRoPSIuMjUiLz48cGF0aCBkPSJNMjQuOTkxIDEzLjEwN2EuNTY3LjU2NyAwIDAgMS0uNTY4LS41NjdWOS4xMzRhLjU2OC41NjggMCAwIDAtLjU2Ny0uNTY3SDMuNDNhMi43NzggMi43NzggMCAwIDEtMi4wMDctLjg0MSAyLjc2MiAyLjc2MiAwIDAgMS0uODMtMS45OTVBMi44NCAyLjg0IDAgMCAxIDMuNDMgMi44OTRoOS43MDNhLjU2Ny41NjcgMCAwIDEgMCAxLjEzNEgzLjQzYy0uOTM4IDAtMS43MDIuNzY0LTEuNzAyIDEuNzAzIDAgLjQ1Ny4xNzcuODguNDk3IDEuMTk0LjMyNC4zMy43NS41MDggMS4yMDUuNTA4aDIwLjQyN2MuOTM4IDAgMS43MDIuNzY0IDEuNzAyIDEuNzAydjMuNDA1YS41NjcuNTY3IDAgMCAxLS41NjcuNTY3eiIgZmlsbD0iIzAwMCIgc3Ryb2tlPSIjRjlGNkYwIiBzdHJva2Utd2lkdGg9Ii4yNSIvPjxwYXRoIGQ9Ik0yMS41ODYgOC41NjhBLjU2Ny41NjcgMCAwIDEgMjEuMDIgOFY0LjU5NmEuNTcuNTcgMCAwIDAtLjU2OC0uNTY4aC0yLjA3NmEuNTY3LjU2NyAwIDEgMSAwLTEuMTM0aDIuMDc2Yy45NCAwIDEuNzAzLjc2MyAxLjcwMyAxLjcwMlY4YS41NjguNTY4IDAgMCAxLS41NjguNTY4eiIgZmlsbD0iIzAwMCIgc3Ryb2tlPSIjRjlGNkYwIiBzdHJva2Utd2lkdGg9Ii4yNSIvPjxwYXRoIGQ9Ik0yMS4wMiA4LjU2OGEuNTY2LjU2NiAwIDAgMS0uNDktLjI4MmwtMy42ODQtNi4zMTJMNS45OSA4LjQ4N2EuNTY3LjU2NyAwIDEgMS0uNTgzLS45NzNMMTYuNzU1LjcwNGEuNTczLjU3MyAwIDAgMSAuNzgzLjJsMy45NzEgNi44MWEuNTY1LjU2NSAwIDAgMS0uMjA0Ljc3NS41NTQuNTU0IDAgMCAxLS4yODYuMDc5em02LjI0IDExLjM0OGgtNS42NzRhMy45NzcgMy45NzcgMCAwIDEtMy45NzItMy45NzIgMy45NzcgMy45NzcgMCAwIDEgMy45NzItMy45NzJoNS42NzRjLjMxNCAwIC41NjguMjU0LjU2OC41Njh2Ni44MDlhLjU2Ny41NjcgMCAwIDEtLjU2OC41Njd6bS01LjY3NC02LjgxYTIuODQgMi44NCAwIDAgMC0yLjgzNyAyLjgzOCAyLjg0IDIuODQgMCAwIDAgMi44MzcgMi44MzdoNS4xMDd2LTUuNjc0aC01LjEwN3oiIGZpbGw9IiMwMDAiIHN0cm9rZT0iI0Y5RjZGMCIgc3Ryb2tlLXdpZHRoPSIuMjUiLz48cGF0aCBkPSJNMjEuNTg2IDE3LjY0NmExLjcwNCAxLjcwNCAwIDAgMS0xLjcwMi0xLjcwMmMwLS45MzguNzY0LTEuNzAyIDEuNzAyLTEuNzAyLjk0IDAgMS43MDIuNzY0IDEuNzAyIDEuNzAyIDAgLjkzOS0uNzYzIDEuNzAyLTEuNzAyIDEuNzAyem0wLTIuMjdhLjU2OS41NjkgMCAwIDAgMCAxLjEzNi41NjkuNTY5IDAgMCAwIDAtMS4xMzV2LS4wMDF6IiBmaWxsPSIjMDAwIiBzdHJva2U9IiNGOUY2RjAiIHN0cm9rZS13aWR0aD0iLjI1Ii8+PC9zdmc+"
+          alt="">
+        <p>Secure Payments
+        <p>
+      </div>
+      <div class="ftrs-2">
+        <img
+          src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMjciIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAyNyAyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNy4zNTYgNS4xOTZsMy4xODEgMi45N2MuNTQ0LjUxIDEuNDE3LjA4IDEuNDE3LS42OVY2Ljg5Yy45My4wNjYgMS43OTcuMzIgMi41MjYuNzQ0Ljk4NC41NzIgMS43NTMgMS41NzUgMi4xMDggMi43NTJhLjg3Ljg3IDAgMCAwIC44MjQuNjM4Yy4wOSAwIC4xOC0uMDA4LjI3LS4wMTIuNDcyLS4wMjMuODUtLjQ2Ni44MjQtLjk3MXYtLjAwN2E3LjgxNCA3LjgxNCAwIDAgMC0uNTk3LTIuNjE0Yy0uNjQ2LTEuNTI0LTEuNzUyLTIuNzY4LTMuMzgtMy44MDItLjgxOC0uNTItMS43MS0uODE3LTIuNTc1LTEuMTA0di0uOThjMC0uNzctLjg3Ni0xLjE5Ni0xLjQxNy0uNjkxbC0zLjE4IDIuOTdhLjk3Ljk3IDAgMCAwIDAgMS4zODN6bS40NjItLjgxM0wxMSAxLjQxYy4wOTYtLjA5LjI1LS4wMTUuMjUuMTIyVjIuOGMwIC4xNzYuMTEzLjMyOC4yNzIuMzY4LjA2OC4wMTYuMTQzLjAzOC4yMTMuMDYyLjg2Ny4yODcgMS42ODUuNTYgMi40MzUgMS4wMzYgMS41Ljk1MyAyLjUxNCAyLjA4NiAzLjEgMy40NjZhNy4wNSA3LjA1IDAgMCAxIC41MzMgMi4zNDJ2LjAwNmEuMTY3LjE2NyAwIDAgMS0uMTUzLjE3N2wtLjIzLjAxMmgtLjAwOGEuMTYzLjE2MyAwIDAgMS0uMTU0LS4xMTZjLS40MS0xLjM2LTEuMy0yLjUyLTIuNDQzLTMuMTgzLS45MTItLjUzLTIuMDEtLjgyNC0zLjE3Ni0uODUxYS4zNzEuMzcxIDAgMCAwLS4zODkuMzc2di45OGMwIC4xMzYtLjE1NC4yMTMtLjI1LjEyM0w3LjgxNyA0LjYyN2EuMTcxLjE3MSAwIDAgMSAwLS4yNDRoLjAwMXpNMS45NiAxOC40NzhoLjkyMXY1LjY0NGMwIC44MDYuNjk2IDEuNDYyIDEuNTUyIDEuNDYyaDE4Ljc5Yy44NTYgMCAxLjU1Mi0uNjU2IDEuNTUyLTEuNDYydi01LjY0NGguOTIxYy43ODggMCAxLjM0NS0uNzczIDEuMDUzLTEuNDYzbC0yLTQuNzI1YS4zODEuMzgxIDAgMCAwLS4zNTUtLjIyNmgtMi4wMTJjLS4yMSAwLS4zOC4xNi0uMzguMzU5IDAgLjE5OC4xNy4zNTkuMzguMzU5aDEuNzU0bDEuOTA1IDQuNDk5Yy4wOTcuMjI3LS4wODYuNDgtLjM0NS40OEgxMy43NjNhLjM3My4zNzMgMCAwIDEtLjM0NS0uMjJsLTIuMDE2LTQuNzZoOS40NTVjLjIxIDAgLjM4MS0uMTYuMzgxLS4zNThhLjM3LjM3IDAgMCAwLS4zOC0uMzZIMy4yNmEuMzgzLjM4MyAwIDAgMC0uMzU0LjIyN0wuOTA3IDE3LjAxNGMtLjI5Mi42OS4yNjUgMS40NjMgMS4wNTMgMS40NjN6bTguODggMy43OTVjLjIxMSAwIC4zODItLjE2LjM4Mi0uMzZWMTQuMjlsMS40OSAzLjUxN2MuMTcyLjQwOC41ODUuNjcgMS4wNTIuNjdoMTAuMjV2NS42NDVjMCAuNDEtLjM1NS43NDQtLjc5Ljc0NEgxMS4yMlYyMy4zNWEuMzcuMzcgMCAwIDAtLjM4LS4zNi4zNzEuMzcxIDAgMCAwLS4zODIuMzZ2MS41MTZINC40MzJjLS40MzYgMC0uNzktLjMzMy0uNzktLjc0NHYtNS42NDRoNC4yNzVjLjQ2IDAgLjg4Mi0uMjcgMS4wNTMtLjY3MmwxLjQ5LTMuNTE2djcuNjI0YzAgLjE5OS4xNy4zNTkuMzguMzU5ek0xLjYxNCAxNy4yOGwxLjkwNi00LjVoNi43NmwtMi4wMTcgNC43NmEuMzczLjM3MyAwIDAgMS0uMzQ1LjIySDEuOTZjLS4yNTkgMC0uNDQtLjI1My0uMzQ1LS40OHoiIGZpbGw9IiMwMDAiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIuMSIvPjwvc3ZnPg=="
+          alt="">
+        <p>Easy Return
+        <p>
+      </div>
     </div>
   </div>
+  <footer>
 
 
-</div>
+    <div class="fot-item">
+
+        <div class="fot-li">
+
+            <ul>
+                <h2>TOP CATEGORIES</h2>
+                <li><a> Anarkali Suit Sets</a></li>
+                <li><a> Kurtas</a></li>
+                <li><a> Biba Girls</a></li>
+                <li><a> Jewellery</a></li>
+                <li><a> Palazzos</a></li>
+                <li><a> Straight Suit Sets</a></li>
+            </ul>
+
+            <ul>
+                <h2>CUSTOMER SERVICE</h2>
+                <li><a> Returns & Cancellation</a></li>
+                <li><a> FAQs</a></li>
+                <li><a>Contact us</a></li>
+                <li><a> Blog</a></li>
+
+            </ul>
+            <ul>
+                <h2>BIBA BRAND</h2>
+                <li><a>About us</a></li>
+                <li><a>Investor Information</a></li>
+                <li><a href="./businessenquiry.html"> Business Enquiry</a></li>
+                <li><a> Store locator</li>
+
+            </ul>
+            <ul>
+                <h2>MY PROFILE</h2>
+                <li><a>My account</a></li>
+                <li><a>Track order</a></li>
+                <li><a> My cart</a></li>
+                <li><a> Order history</a></li>
+
+            </ul>
+            <ul>
+                <h2>QUICK LINKS</h2>
+                <li><a> Shipping Policy</a></li>
+                <li><a>Privacy Policy</a></li>
+                <li><a> Careers</a></li>
+                <li><a> Terms of use</a></li>
+
+            </ul>
+        </div>
+
+        <!-- ****   footer part of second      ****   -->
+
+        <div class="main-footer">
+            <div class="icon-box">
+                <span>
+                    <h4>Follow us</h4>
+                    <a href="https://www.instagram.com/bibaindia/"><i class="fa-brands fa-instagram"
+                            style="font-size:18px; padding:6px; color: #fff; float: left;"></i></a>
+                    <a href="https://www.facebook.com/BibaIndia"> <i class="fa-brands fa-facebook"
+                            style="font-size:18px; padding:6px; color: #fff;  float: left;"></i></a>
+                    <a href="https://www.youtube.com/channel/UCk6BlEPMAPwlXIbneFuW0AA"><i
+                            class="fa-brands fa-youtube"
+                            style="font-size:18px; padding:6px; color: #fff; float: left;"></i></a>
+                    <a href="https://twitter.com/BibaIndia"> <i class="fa-brands fa-twitter"
+                            style="font-size:18px; padding:6px; color: #fff; float: left;"></i></a>
+                    <a href="https://in.pinterest.com/bibaindia/"> <i class="fa-brands fa-pinterest"
+                            style="font-size:18px; padding:6px; color: #fff; float: left;"></i></a>
+                </span>
+            </div>
+
+            <div class="sec-pay">
+                <span><i class="fa-solid fa-shield" style="font-size:30px; "></i></span>
+                <span>100% Secure Payments</span>
+                <img class="pay" src="./assets/icons/payment-partners.svg" alt="img sorce">
+            </div>
+
+            <div class="bit-box">
+                <span><i class="fa-brands fa-expeditedssl" style="font-size:30px;"></i></span>
+                <span>256 Bit Encryption</span>
+            </div>
+        </div>
+
+        <br>
+        <hr><br>
+
+        <p id="copy">Copyright to Biba store | Name of Manufacturer - BIBA Fashion Limited | Country of
+            Manufacture - India</p>
+</footer>
 
 </body>
+
 </html>
